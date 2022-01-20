@@ -23,12 +23,12 @@ body {
 }
 
 /*** 1. Form ***********************/
-.form-container {
+.form {
   width: 80vw;
   margin: 1rem;
 }
 
-.name-container {
+.form__dual-container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -42,10 +42,14 @@ body {
   width: 100%;
 }
 
-.btn-container {
+.terms-container__agree-container {
+  position: relative;
+  left: -2%;
+}
+
+.form__btn-container {
   width: 100%;
   display: flex;
-
   justify-content: space-between;
 }
 
@@ -58,10 +62,6 @@ input {
   border-radius: 0.2rem;
 }
 
-/* .input:focus {
-  
-} */
-
 input[type="text"]:focus,
 input[type="tel"]:focus,
 input[type="email"]:focus,
@@ -71,7 +71,7 @@ input[type="password"]:focus {
   box-shadow: 0 0 0.25rem 0.05rem #719ece;
 }
 
-.checkbox {
+.form__input[type="checkbox"] {
   height: unset;
   width: unset;
 }
@@ -137,16 +137,32 @@ h1 {
 /* Media queries */
 @media (min-width: 768px) {
   /*** 1. Form ***********************/
-  .form-container {
+  .form {
     width: 50vw;
   }
 
-  .name-container {
+  .form__dual-container {
     flex-direction: row;
   }
 
+  /* .terms-container__agree-container {
+    position: relative;
+    left: -2%;
+  } */
+
   /*** 1.2 Inputs ***********************/
-  .nameInput {
+  .form__dual-container input {
     width: 49%;
+  }
+
+  .form__input[type="checkbox"]:hover,
+  label:hover {
+    cursor: pointer;
+  }
+
+  /*** 2. Buttons ***********************/
+  .btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
   }
 }
