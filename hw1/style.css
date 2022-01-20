@@ -1,0 +1,152 @@
+/* 
+TABLE OF CONTENTS
+1. Form
+ 1.2 Inputs
+2. Buttons
+3. Utilities and Text
+
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*** 1. Form ***********************/
+.form-container {
+  width: 80vw;
+  margin: 1rem;
+}
+
+.name-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.terms-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+
+  justify-content: space-between;
+}
+
+/*** 1.2 Inputs ***********************/
+input {
+  height: 2.5rem;
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.25rem;
+  border-radius: 0.2rem;
+}
+
+/* .input:focus {
+  
+} */
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border: 0.1rem #719ece;
+  box-shadow: 0 0 0.25rem 0.05rem #719ece;
+}
+
+.checkbox {
+  height: unset;
+  width: unset;
+}
+
+.terms-container {
+  margin: 0.5rem 0;
+}
+
+.terms-container span {
+  width: 75%;
+}
+
+/*** 2. Buttons ***********************/
+.btn {
+  color: white;
+  border: none;
+  border-radius: 0.2rem;
+  width: 49%;
+  height: 2.5rem;
+  font-weight: bold;
+}
+
+.register-btn {
+  background-color: rgb(66, 139, 202);
+}
+
+.signin-btn {
+  background-color: rgb(92, 184, 92);
+}
+
+/*** 3. Utilities and text***********************/
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.terms-container label {
+  font-weight: bold;
+}
+
+.register {
+  background-color: rgb(66, 139, 202);
+  color: white;
+  border-radius: 0.2rem;
+  padding: 0.15rem;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.terms {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Media queries */
+@media (min-width: 768px) {
+  /*** 1. Form ***********************/
+  .form-container {
+    width: 50vw;
+  }
+
+  .name-container {
+    flex-direction: row;
+  }
+
+  /*** 1.2 Inputs ***********************/
+  .nameInput {
+    width: 49%;
+  }
+}
