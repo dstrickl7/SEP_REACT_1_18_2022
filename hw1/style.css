@@ -145,11 +145,6 @@ h1 {
     flex-direction: row;
   }
 
-  /* .terms-container__agree-container {
-    position: relative;
-    left: -2%;
-  } */
-
   /*** 1.2 Inputs ***********************/
   .form__dual-container input {
     width: 49%;
