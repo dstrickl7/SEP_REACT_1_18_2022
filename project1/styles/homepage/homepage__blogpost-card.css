@@ -1,0 +1,29 @@
+.homepage__blogpost-card {
+  width: 85vw;
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border: solid var(--text-color) 0.1rem;
+}
+.homepage__blogpost-card-title {
+  font-size: clamp(1.2rem, 5vw, 1.5rem);
+}
+.homepage__blogpost-card-description {
+}
+.homepage__blogpost-card-category {
+  font-weight: 700;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+.homepage__blogpost-card-link {
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.row:first-child {
+  margin: 0;
+}
