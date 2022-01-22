@@ -31,6 +31,7 @@ body {
 
 main {
   width: 100%;
+  display: grid;
 }
 
 .heading {
@@ -44,6 +45,20 @@ h3 {
   font-family: var(--averia);
 }
 
+p {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+h2 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+h3 {
+  font-size: clamp(1.3rem, 5vw, 1.6rem);
+}
+
 .hidden {
   display: none;
 }
@@ -54,4 +69,10 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media (min-width: 765px) {
+  main {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }

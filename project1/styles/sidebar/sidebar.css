@@ -3,6 +3,7 @@
 
 .sidebar {
   width: 100%;
+  position: relative;
 }
 
 .sidebar ul {
@@ -15,4 +16,11 @@
   border: none;
   position: absolute;
   right: 5%;
+}
+
+@media (min-width: 765px) {
+  .sidebar {
+    grid-column-start: 5;
+    grid-column-end: 6;
+  }
 }

@@ -13,3 +13,23 @@
 article {
   margin-bottom: 1.5rem;
 }
+
+@media (min-width: 765px) {
+  .homepage__blogposts-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    padding: 1.5rem;
+    padding-right: 3rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

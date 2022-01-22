@@ -52,3 +52,6 @@ figcaption {
   margin: 0 0.5rem;
   width: 1rem;
 }
+
+@media (min-width: 765px) {
+}

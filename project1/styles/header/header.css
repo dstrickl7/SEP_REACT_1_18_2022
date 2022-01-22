@@ -20,3 +20,9 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+@media (min-width: 1800px) {
+  .hero {
+    min-height: 40vh;
+  }
+}
