@@ -1,0 +1,20 @@
+.sidebar__author-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.sidebar__author-avatar {
+  border-radius: 50%;
+  width: 5rem;
+}
+
+.company {
+  margin: 0.5rem 0;
+}
+
+.sidebar__author-description {
+  text-align: center;
+}

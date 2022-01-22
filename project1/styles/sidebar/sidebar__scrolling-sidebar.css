@@ -1,4 +1,16 @@
+.sidebar__scrolling-sidebar {
+  background-color: var(--sidebar-color);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .sidebar__social-icon-container {
+  display: none;
+}
+
+/* .sidebar__social-icon-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,9 +37,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 0;
 }
 
 .sidebar__social-icon {
   width: 1.5rem;
-}
+  z-index: 1;
+} */

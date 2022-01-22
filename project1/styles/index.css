@@ -26,9 +26,14 @@ body {
   color: var(--text-color);
   font-family: var(--montserrat);
   font-size: 15px;
+  width: 100%;
 }
 
-h1 {
+main {
+  width: 100%;
+}
+
+.heading {
   color: #000000;
 }
 

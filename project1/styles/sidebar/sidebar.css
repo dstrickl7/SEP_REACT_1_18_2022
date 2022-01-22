@@ -1,2 +1,11 @@
 @import url("sidebar__author-section.css");
 @import url("sidebar__scrolling-sidebar.css");
+
+.sidebar {
+  width: 100%;
+}
+
+.sidebar ul {
+  margin: 1rem 0;
+  list-style: inside url("../images/custom-bullet.svg");
+}
