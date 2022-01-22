@@ -31,18 +31,20 @@
             <div class="navbar__navlist-container">
                 <ul class="navbar__navlist">
                     <li class="navitem"><a href="#" class="navlink">Home</a></li>
-                    <li class="navitem"><a href="#" class="navlink">Categories <img src="styles/images/arrow-down.svg"
-                                alt="" aria-hidden="true"></a></li>
+                    <li class="navitem"><a href="#" class="navlink" id="categories">Categories <img
+                                src="styles/images/arrow-down.svg" alt="" aria-hidden="true"></a></li>
                 </ul>
+                <div class="navbar__categories-container">
+                    <ul>
+                        <li><a href="">Tech</a></li>
+                        <li><a href="">Food</a></li>
+                        <li><a href="">Media</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar__categories-container">
-                <ul>
-                    <li><a href="">Tech</a></li>
-                    <li><a href="">Food</a></li>
-                    <li><a href="">Media</a></li>
-                </ul>
-            </div>
+
         </nav>
+        <div class="overlay"></div>
     </header>
     <!-------------- Header End --------------------------------->
     <div class="hero">
@@ -59,9 +61,15 @@
             </div>
             <div class="sidebar__scrolling-sidebar">
                 <div class="sidebar__social-icon-container">
-                    <img src="styles/images/icon-facebook.svg" alt="Facebook" class="sidebar__social-icon">
-                    <img src="styles/images/icon-twitter.svg" alt="Twitter" class="sidebar__social-icon">
-                    <img src="styles/images/icon-linkedin.svg" alt="LinkedIn" class="sidebar__social-icon">
+                    <div class="social-icon-container">
+                        <img src="styles/images/icon-facebook.svg" alt="Facebook" class="sidebar__social-icon">
+                    </div>
+                    <div class="social-icon-container">
+                        <img src="styles/images/icon-twitter.svg" alt="Twitter" class="sidebar__social-icon">
+                    </div>
+                    <div class="social-icon-container">
+                        <img src="styles/images/icon-linkedin.svg" alt="LinkedIn" class="sidebar__social-icon">
+                    </div>
                 </div>
                 <div class="sidebar__post-months-container">
                     <ul>

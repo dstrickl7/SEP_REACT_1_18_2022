@@ -1,3 +1,126 @@
 .header__navbar {
   background-color: var(--header-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.navbar__logo-container {
+  width: 75%;
+}
+
+.navbar__logo-link {
+  font-size: clamp(2rem, 2vw, 3rem);
+  text-decoration: none;
+  color: black;
+  font-family: var(--averia);
+  font-weight: 700;
+}
+
+/**************************************************************/
+/* Hamburger and close icon */
+.navbar__btn {
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: transparent;
+  border: none;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  z-index: 5;
+  display: block;
+  position: absolute;
+  width: 1.5rem;
+  height: 0.15rem;
+  background-color: black;
+  transition: transform 0.35s ease-in-out, opacity 0.2s linear;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+}
+
+.hamburger::before {
+  bottom: 0.4rem;
+}
+
+.hamburger::after {
+  top: 0.4rem;
+}
+
+.hamburger.active {
+  transform: rotate(315deg);
+}
+
+.hamburger.active::after {
+  transform: rotate(450deg) translate(-0.4rem);
+}
+
+.hamburger.active::before {
+  opacity: 0;
+}
+/**************************************************************/
+/* Navlist container and navlist */
+.navbar__navlist-container {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 100%;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: height 0.1s ease-in, width 0.1s ease-in, all 0.25s ease-in-out;
+}
+
+.navbar__navlist-container.active {
+  visibility: visible;
+  background-color: #ffffff;
+  height: 100vh;
+  width: 50%;
+  padding: 0 1rem;
+  z-index: 3;
+  border-radius: 0;
+  transform: translateX(0);
+  transition: height 0.1s ease-in, width 0.1s ease-in, all 0.25s ease-in-out;
+}
+
+.navlink {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navitem {
+  list-style: none;
+  padding: 0.5rem 0;
+}
+/**************************************************************/
+/* Categories container */
+.navbar__categories-container {
+  display: none;
+}
+
+.navbar__categories-container.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #ffffff;
+  margin-left: 1rem;
+  bottom: 30%;
+}
+
+.navbar__categories-container ul {
+  list-style: none;
+}
+
+.navbar__categories-container ul a {
+  text-decoration: none;
+  color: #000000;
 }

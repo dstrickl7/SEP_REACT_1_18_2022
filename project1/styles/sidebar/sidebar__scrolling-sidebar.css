@@ -1,0 +1,33 @@
+.sidebar__social-icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.social-icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0.5rem 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1rem 0 0 1rem;
+}
+
+.social-icon-container::after {
+  content: "";
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1rem 0 0 1rem;
+  background-color: var(--text-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.sidebar__social-icon {
+  width: 1.5rem;
+}
