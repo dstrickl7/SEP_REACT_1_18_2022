@@ -9,3 +9,10 @@
   margin: 1rem 0;
   list-style: inside url("../images/custom-bullet.svg");
 }
+
+.sidebar__btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 5%;
+}

@@ -9,12 +9,16 @@
 .sidebar__author-avatar {
   border-radius: 50%;
   width: 5rem;
+  margin: 0.5rem 0;
 }
 
 .company {
   margin: 0.5rem 0;
+  font-size: clamp(0.8rem, 5vw, 1rem);
+  font-weight: 400;
 }
 
 .sidebar__author-description {
   text-align: center;
+  font-weight: 300;
 }

@@ -23,3 +23,15 @@ if (navlist) {
 categoriesLink.addEventListener("click", () => {
   categories.classList.toggle("active");
 });
+
+// Sidebar variables
+const sidebarBtn = document.querySelector(".sidebar__btn");
+const scrollingSidebar = document.querySelector(
+  ".sidebar__scrolling-sidebar-inner-container"
+);
+const dropdownHeading = document.querySelector(".dropdown-heading");
+
+sidebarBtn.addEventListener("click", () => {
+  scrollingSidebar.classList.toggle("dropdown");
+  dropdownHeading.classList.toggle("hidden");
+});

@@ -1,2 +1,5 @@
 @import url("blog__blogpost.css");
-@import url("blog__blogpost-page.css");
+
+.blog__blogpost-page {
+  width: 100%;
+}
