@@ -12,7 +12,32 @@
 <body class="blog__blogpost-page">
     <!-------------- Header Begins --------------------------------->
     <header class="header">
-        <nav class="header__navbar"></nav>
+        <nav class="header__navbar">
+            <div class="navbar__logo-container">
+                <a href="#" class="navbar__logo-link">
+                    Blog
+                </a>
+            </div>
+            <div class="navbar__btn-container">
+                <button class="navbar__btn" type="button">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+            <div class="navbar__navlist-container">
+                <ul class="navbar__navlist">
+                    <li class="navitem"><a href="#" class="navlink">Home</a></li>
+                    <li class="navitem"><a href="#" class="navlink">Categories <img src="styles/images/arrow-down.svg"
+                                alt="" aria-hidden="true"></a></li>
+                </ul>
+            </div>
+            <div class="navbar__categories-container">
+                <ul>
+                    <li><a href="">Tech</a></li>
+                    <li><a href="">Food</a></li>
+                    <li><a href="">Media</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <!-------------- Header End --------------------------------->
     <main>
@@ -24,19 +49,63 @@
                 <p class="company"></p>
                 <p class="sidebar__author-description"></p>
             </div>
-            <div class="sidebar__scrolling-sidebar"></div>
+            <div class="sidebar__scrolling-sidebar">
+                <div class="sidebar__social-icon-container">
+                    <img src="styles/images/icon-facebook.svg" alt="Facebook" class="sidebar__social-icon">
+                    <img src="styles/images/icon-twitter.svg" alt="Twitter" class="sidebar__social-icon">
+                    <img src="styles/images/icon-linkedin.svg" alt="LinkedIn" class="sidebar__social-icon">
+                </div>
+                <div class="sidebar__post-months-container">
+                    <ul>
+                        <li class="month">January 2022</li>
+                        <li class="month">December 2021</li>
+                        <li class="month">November 2021</li>
+                        <li class="month">October 2021</li>
+                        <li class="month">September 2021</li>
+                        <li class="month">August 2021</li>
+                    </ul>
+                </div>
+                <div class="sidebar__post-categories-container">
+                    <ul>
+                        <li class="category">Tech</li>
+                        <li class="category">Cooking</li>
+                        <li class="category">Media</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <!-------------- Sidebar Ends --------------------------------->
         <section class="blog__blogpost-container">
-
-
+            <h1>Blog Title</h1>
+            <q class="blog__quote"></q>
+            <h2 class="blog__blogpost-subtitle"></h2>
+            <p class="blog__blogpost-text"></p>
+            <figure>
+                <img src="" alt="">
+                <figcaption>Random image caption for a random image</figcaption>
+            </figure>
+            <h2 class="blog__blogpost-subtitle"></h2>
+            <p class="blog__blogpost-text"></p>
+            <div class="blog__blogpost-btn-container">
+                <button class="btn" type="button">Previous Post<img src="styles/images/arrow-left.svg" alt=""
+                        aria-hidden="true"></button>
+                <button class="btn" type="button">Next Post<img src="styles/images/arrow-right.svg" alt=""
+                        aria-hidden="true"></button>
+            </div>
         </section>
     </main>
     <!-------------- Footer Begins --------------------------------->
     <footer class="footer">
-
+        <p>Created by</p>
+        <p class="author-name">Danielle Strickland</p>
+        <div class="footer__social-icon-container">
+            <img src="styles/images/icon-facebook.svg" alt="Facebook" class="footer__social-icon">
+            <img src="styles/images/icon-twitter.svg" alt="Twitter" class="footer__social-icon">
+            <img src="styles/images/icon-linkedin.svg" alt="LinkedIn" class="sidebar__social-icon">
+        </div>
     </footer>
     <!-------------- Footer End --------------------------------->
+    <script src="index.js"></script>
 </body>
 
 </html>
