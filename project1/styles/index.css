@@ -32,6 +32,7 @@ body {
 main {
   width: 100%;
   display: grid;
+  margin-top: 5rem;
 }
 
 .heading {
@@ -59,6 +60,10 @@ h3 {
   font-size: clamp(1.3rem, 5vw, 1.6rem);
 }
 
+a {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
 .hidden {
   display: none;
 }
@@ -69,8 +74,22 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: var(--montserrat);
 }
 
+button:hover {
+  cursor: pointer;
+}
+
+.overlay.active {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 3;
+}
 @media (min-width: 765px) {
   main {
     grid-template-columns: repeat(5, 1fr);

@@ -23,7 +23,7 @@
 
 figure {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   padding: 1rem;
   width: 100%;
 }
@@ -54,4 +54,27 @@ figcaption {
 }
 
 @media (min-width: 765px) {
+  .blog__blogpost-container {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    padding: 1.5rem;
+    padding-right: 3rem;
+  }
+
+  figure {
+    width: 50%;
+  }
+
+  .blog__blogpost-container .blog__figure-container,
+  .blog__blogpost-container .blog__quote-container {
+    justify-content: center;
+  }
+
+  .blog__blogpost-container .blog__btn-container {
+    margin-top: 3rem;
+  }
+  .blog__btn {
+    width: 25%;
+  }
 }

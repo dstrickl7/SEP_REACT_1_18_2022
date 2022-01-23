@@ -14,7 +14,10 @@ if (navlist) {
     hamburger.classList.toggle("active");
     navlist.classList.toggle("active");
     overlay.classList.toggle("active");
-    if (categories.classList.contains("active")) {
+    if (
+      categories.classList.contains("active") &&
+      document.documentElement.clientWidth < 765
+    ) {
       categories.classList.remove("active");
     }
   });

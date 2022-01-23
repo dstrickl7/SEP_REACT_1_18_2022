@@ -14,11 +14,13 @@
 
 .company {
   margin: 0.5rem 0;
-  font-size: clamp(0.8rem, 5vw, 1rem);
+  text-align: center;
+  font-size: clamp(0.8rem, 3vw, 1rem);
   font-weight: 400;
 }
 
 .sidebar__author-description {
   text-align: center;
   font-weight: 300;
+  font-size: clamp(0.6rem, 5vw, 1rem);
 }

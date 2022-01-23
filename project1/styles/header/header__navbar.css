@@ -3,6 +3,10 @@
   display: flex;
   justify-content: space-between;
   padding: 1.5rem;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  top: 0%;
 }
 
 .navbar__logo-container {
@@ -97,6 +101,13 @@
   color: #000000;
 }
 
+.navbar__navlist button {
+  border: none;
+  background-color: transparent;
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-family: var(--montserrat);
+}
+
 .navitem {
   list-style: none;
   padding: 0.5rem 0;
@@ -105,22 +116,92 @@
 /* Categories container */
 .navbar__categories-container {
   display: none;
+  position: absolute;
+  margin-left: 1rem;
 }
 
 .navbar__categories-container.active {
   display: flex;
   flex-direction: column;
-  position: absolute;
-  background-color: #ffffff;
-  margin-left: 1rem;
   bottom: 30%;
 }
 
 .navbar__categories-container ul {
   list-style: none;
+  width: 100%;
 }
 
-.navbar__categories-container ul a {
+.navbar__categories-container ul li,
+.navbar__categories-container ul li > a {
   text-decoration: none;
   color: #000000;
+  width: 100%;
+}
+
+@media (min-width: 765px) {
+  .navbar__navlist-container {
+    visibility: visible;
+    transform: translateX(0%);
+    position: unset;
+    top: unset;
+    right: unset;
+    width: 50%;
+    height: unset;
+    border-radius: 0;
+  }
+
+  .navbar__navlist {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .navlink {
+    position: relative;
+    margin: 0 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .navlink:hover,
+  .navlink > svg path:hover {
+    color: #ffffff;
+    fill: #ffffff;
+  }
+
+  .navlink:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #ffffff;
+  }
+
+  .navbar__btn-container {
+    display: none;
+  }
+
+  .navbar__categories-container.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding: 1.5rem;
+    width: 50%;
+    bottom: unset;
+    top: 3rem;
+    right: 15%;
+    background-color: var(--header-color);
+    z-index: 5;
+  }
+
+  .navbar__categories-container:focus {
+    outline: none;
+  }
+
+  .navbar__categories-link {
+    width: 100%;
+  }
 }
