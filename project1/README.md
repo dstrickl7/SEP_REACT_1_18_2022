@@ -1,9 +1,10 @@
-# Inventory Tracker and Shopping List
+# Antra SEP Project 1 - Blog
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Requirements](#requirements)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -23,15 +24,15 @@ website using PLAIN HTML and CSS following proper formatting and style
 rules. No third-party libraries are allowed. The blog website will contain two 
 pages: One is the home page, and the other is the page of a detailed blog.
 
-##Requirements
+### Requirements
 
-#Structure
+## Structure
 - CSS should be seperate from HTML
 - CSS Imports - there should be at least 3 imported CSS files
 - Directories & Files - Files are organized with a directory structure that seperates files based on page and functionality
 - Links - There is an intentional user flow on each page with appropriate links as needed
 
-#Design
+## Design
 - Custom Design
 - Foundations
   - Typography: Custom design for typography with at least 3 unique properties for each typography selector
@@ -41,7 +42,7 @@ pages: One is the home page, and the other is the page of a detailed blog.
   - Image caption
   - Buttons
   - Card
-#Pattern
+## Pattern
 - The general pattern of the webpage should be as follows:
   - Blog Homepage
     - Navbar
@@ -63,11 +64,11 @@ pages: One is the home page, and the other is the page of a detailed blog.
   - Blog homepage
   - Blog post
 
-#Layout
+## Layout
 - Flexbox used at least twice
 - CSS Grid used at least twice
 
-#Responsiveness
+## Responsiveness
 - Pages are mobile friendly and display correctly on all screen sizes
 
 ### Screenshot
