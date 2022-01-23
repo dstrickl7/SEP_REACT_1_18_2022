@@ -9,6 +9,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: 10%;
 }
 
 .hero::after {
@@ -21,8 +22,20 @@
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.hero h1 {
+  color: #ffffff;
+}
+
+@media (min-width: 765px) {
+  .hero {
+    min-height: 40vh;
+    margin-top: 5%;
+  }
+}
+
 @media (min-width: 1800px) {
   .hero {
     min-height: 40vh;
+    margin-top: 2.5%;
   }
 }

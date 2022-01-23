@@ -1,2 +1,10 @@
 @import url("homepage__blogpost-container.css");
 @import url("homepage__blogpost-card.css");
+
+.homepage__blogpost-card-btn {
+  background-color: var(--header-color);
+}
+
+.main-heading {
+  justify-content: center;
+}

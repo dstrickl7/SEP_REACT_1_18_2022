@@ -30,6 +30,10 @@
   .homepage__blogpost-card {
     width: 100%;
   }
+
+  .homepage__blogpost-card:hover {
+    background: center / cover no-repeat url(../images/card-img.jpg);
+  }
 }
 
 @media (min-width: 1800px) {

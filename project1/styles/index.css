@@ -32,7 +32,10 @@ body {
 main {
   width: 100%;
   display: grid;
-  margin-top: 5rem;
+}
+
+.blog__main {
+  margin-top: 15%;
 }
 
 .heading {
@@ -47,7 +50,7 @@ h3 {
 }
 
 p {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
 }
 
 h1 {
@@ -61,7 +64,12 @@ h3 {
 }
 
 a {
-  font-size: clamp(1rem, 1.5vw, 1.5rem);
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  color: #000000;
+}
+
+a:hover {
+  color: var(--footer-color);
 }
 
 .hidden {
@@ -70,7 +78,10 @@ a {
 
 .btn {
   border-radius: 0.2rem;
-  padding: 0.75rem;
+  padding: 0.5rem;
+}
+
+button {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -90,8 +101,13 @@ button:hover {
   height: 100vh;
   z-index: 3;
 }
+
 @media (min-width: 765px) {
   main {
     grid-template-columns: repeat(5, 1fr);
+  }
+
+  .blog__main {
+    margin-top: 10%;
   }
 }
