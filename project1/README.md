@@ -73,8 +73,8 @@ pages: One is the home page, and the other is the page of a detailed blog.
 ### Screenshot
 
 **Original design**
-![](Laptop - Blogpage.png)
-![](Laptop - Homepage.png)
+![](homepage.png)
+![](blog.png)
 **Finished product**
 ![](screenshot1.png)
 ![](screenshot2.png)
