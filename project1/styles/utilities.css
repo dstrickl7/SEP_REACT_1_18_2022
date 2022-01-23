@@ -1,0 +1,48 @@
+h1,
+h2,
+h3 {
+  font-family: var(--averia);
+}
+
+p {
+  font-size: clamp(0.8rem, 1.5vw, 1.5rem);
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+h2 {
+  font-size: clamp(1.5rem, 5vw, 2rem);
+}
+h3 {
+  font-size: clamp(1.3rem, 5vw, 1.6rem);
+}
+
+a {
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  color: #000000;
+}
+
+a:hover {
+  color: var(--footer-color);
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--montserrat);
+}
+
+button:hover {
+  cursor: pointer;
+}
